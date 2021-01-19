@@ -1,21 +1,36 @@
 import Head from 'next/head';
+import { useEffect } from 'react';
 import styles from '../styles/Home.module.scss';
 
 export default function Home() {
+  
+  /*useEffect(() => {
+    let star1 = document.createElement("div");
+    star1.setAttribute("id", "stars");
+    let first = document.getElementById("first");
+    document.body.appendChild(star1);
+  });*/
+
   return (
+    <div >
+      <div id='stars'></div>
+      <div id='stars2'></div>
     <div className={styles.container}>
+     
       <Head>
         <title>Robo Penny</title>
         <link rel="icon" href="/favicon.ico" />
-        <div className='nav'>
+        <div id='first' className='nav'>
         <a className='navOption' href='/'>Home  |</a>
+        <span>{}</span>
         <a className='navOption' href='/about'> About |</a>
         <a className='navOption' href='/docs'> Docs |</a>
         <a className='navOption' href='/deploy'> Deploy</a>
         </div>
       </Head>
-
+      
       <main className={styles.main}>
+      
         <h1 className={styles.title}>
           RoboPenny says hi!
         </h1>
@@ -45,7 +60,7 @@ export default function Home() {
           >
             <h3>Deploy &rarr;</h3>
             <p>
-              Instantly add RoboPenny to your discord server.
+              Add RoboPenny to your discord server.
             </p>
           </a>
         </div>
@@ -61,6 +76,7 @@ export default function Home() {
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
       </footer>
+    </div>
     </div>
   )
 }

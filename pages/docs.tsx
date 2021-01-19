@@ -3,6 +3,8 @@ import Head from 'next/head';
 function Docs () {
     return (
         <div>
+            <div id='stars'></div>
+      <div id='stars2'></div>
             <Head>
         <title>Robo Penny</title>
         <link rel="icon" href="/favicon.ico" />
