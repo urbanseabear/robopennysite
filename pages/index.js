@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import styles from '../styles/Home.module.scss';
 
 export default function Home() {
   return (
@@ -8,10 +8,10 @@ export default function Home() {
         <title>Robo Penny</title>
         <link rel="icon" href="/favicon.ico" />
         <div className='nav'>
-        <a href='/'>Home  |</a>
-        <a href='/about'> About |</a>
-        <a href='/docs'> Docs |</a>
-        <a href='/deploy'> Deploy</a>
+        <a className='navOption' href='/'>Home  |</a>
+        <a className='navOption' href='/about'> About |</a>
+        <a className='navOption' href='/docs'> Docs |</a>
+        <a className='navOption' href='/deploy'> Deploy</a>
         </div>
       </Head>
 

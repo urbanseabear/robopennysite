@@ -1,6 +1,8 @@
 import Head from 'next/head'
+import { useState } from 'react';
 
 function About() {
+  const [showResume, setShowResume] = useState(false);
     return (
       <div>
           <Head>
@@ -14,6 +16,7 @@ function About() {
         </div>
       </Head>
         <h2>About the developer</h2>
+        <div></div>
       </div>)
 }
 

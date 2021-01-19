@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from 'next/head';
 
 function Deploy () {
   return (
@@ -15,6 +15,7 @@ function Deploy () {
       </Head>
           <h2>How To Get RoboPenny</h2>
           <p>Follow these steps to add RoboPenny to any server.</p>
+          <button><a href='https://discord.com/api/oauth2/authorize?client_id=754507160083365898&permissions=2110254327&scope=bot'>Add me!</a></button>
       </div>
   )
 }
