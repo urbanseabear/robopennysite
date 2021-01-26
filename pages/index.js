@@ -21,10 +21,12 @@ export default function Home() {
         <title>Robo Penny</title>
         <link rel="icon" href="/favicon.ico" />
         <div id='first' className='nav'>
-        <a className='navOption' href='/'>Home  |</a>
-        <span>{}</span>
-        <a className='navOption' href='/about'> About |</a>
-        <a className='navOption' href='/docs'> Docs |</a>
+        <a className='navOption' href='/'>Home </a>
+        <span>{` | `}</span>
+        <a className='navOption' href='/about'> About </a>
+        <span>{` | `}</span>
+        <a className='navOption' href='/docs'> Docs </a>
+        <span>{` | `}</span>
         <a className='navOption' href='/deploy'> Deploy</a>
         </div>
       </Head>
