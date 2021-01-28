@@ -22,9 +22,25 @@
     }
 }
 
+.drops {
+    width: 60%;
+    max-width: 600px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 .about {
     display: flex;
-    width: 500px;
+    width: 60%;
+    max-width: 700px;
     font-family: "Noto";
+    .resumeButton {
+        color: rgb(161, 82, 155);
+        font-size: 1rem;
+        font-family: "Noto";
+        background: none;
+        border: none;
+        text-decoration: underline;
+    }
 }

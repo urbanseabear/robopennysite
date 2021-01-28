@@ -1,15 +1,7 @@
 import Head from 'next/head';
-import { useEffect } from 'react';
 import styles from '../styles/Home.module.scss';
 
 export default function Home() {
-  
-  /*useEffect(() => {
-    let star1 = document.createElement("div");
-    star1.setAttribute("id", "stars");
-    let first = document.getElementById("first");
-    document.body.appendChild(star1);
-  });*/
 
   return (
     <div >
@@ -21,11 +13,11 @@ export default function Home() {
         <title>Robo Penny</title>
         <link rel="icon" href="/favicon.ico" />
         <div id='first' className='nav'>
-        <a className='navOption' href='/'>Home </a>
+        <a className='navOption' href='/'>Home</a>
         <span>{` | `}</span>
-        <a className='navOption' href='/about'> About </a>
+        <a className='navOption' href='/about'>About</a>
         <span>{` | `}</span>
-        <a className='navOption' href='/docs'> Docs </a>
+        <a className='navOption' href='/docs'>Docs</a>
         <span>{` | `}</span>
         <a className='navOption' href='/deploy'> Deploy</a>
         </div>

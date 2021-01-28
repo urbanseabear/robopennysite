@@ -5,14 +5,17 @@ function Docs () {
         <div>
             <div id='stars'></div>
       <div id='stars2'></div>
-            <Head>
+      <Head>
         <title>Robo Penny</title>
         <link rel="icon" href="/favicon.ico" />
-        <div className='nav'>
-        <a href='/'>Home  |</a>
-        <a href='/about'> About |</a>
-        <a href='/docs'> Docs |</a>
-        <a href='/deploy'> Deploy</a>
+        <div id='first' className='nav'>
+        <a className='navOption' href='/'>Home</a>
+        <span>{` | `}</span>
+        <a className='navOption' href='/about'>About</a>
+        <span>{` | `}</span>
+        <a className='navOption' href='/docs'>Docs</a>
+        <span>{` | `}</span>
+        <a className='navOption' href='/deploy'> Deploy</a>
         </div>
       </Head>
             Docs
