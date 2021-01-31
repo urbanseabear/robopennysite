@@ -14,11 +14,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <div id='first' className='nav'>
         <a className='navOption' href='/'>Home</a>
-        <span>{` | `}</span>
+        
         <a className='navOption' href='/about'>About</a>
-        <span>{` | `}</span>
+        
         <a className='navOption' href='/docs'>Docs</a>
-        <span>{` | `}</span>
+        
         <a className='navOption' href='/deploy'> Deploy</a>
         </div>
       </Head>
@@ -41,14 +41,6 @@ export default function Home() {
           </a>
 
           <a
-            href="/about"
-            className={styles.card}
-          >
-            <h3>About &rarr;</h3>
-            <p>Learn about the developer behind RoboPenny!</p>
-          </a>
-
-          <a
             href="/deploy"
             className={styles.card}
           >
@@ -57,6 +49,15 @@ export default function Home() {
               Add RoboPenny to your discord server.
             </p>
           </a>
+
+          <a
+            href="/about"
+            className={styles.card}
+          >
+            <h3>About &rarr;</h3>
+            <p>Learn about the developer behind RoboPenny!</p>
+          </a>
+          
         </div>
       </main>
 
