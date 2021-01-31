@@ -54,12 +54,13 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1040;
+  z-index: 40;
   width: 100vw;
   height: 100vh;
   background-color: #000;
-  opacity: .7;
+  opacity: .9;
 }
+
 
 .modalWrap {
   position: fixed;
@@ -78,23 +79,27 @@ body {
   font-weight: 700;
   line-height: 1;
   color: #000;
-  opacity: .3;
+  opacity: 1;
   cursor: pointer;
   border: none;
 }
 
 .modal {
-  z-index: 1060;
+  z-index: 100;
   background: white;
   position: relative;
   margin: 1.75rem auto;
+  border-radius: 3px;
   width: 600px;
   height: 800px;
+}
+
+.backdrop {
+  background-color: white;
   opacity: 1;
 }
 
 .resume {
-  
   opacity: 1;
   width: 600px;
   height: 800px;

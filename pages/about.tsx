@@ -34,7 +34,7 @@ function About() {
             Hi! My name is Calvin and you can find me most nights somewhere on
             the Goblin server on Crystal in FFXIV. I made this bot in order to
             work on my dev skills and give our FC discord server some unique
-            abilities. If you've been directed here as a portfolio link, click<button className={styles.resumeButton}><i>here</i></button> to view my resume.
+            abilities. If you've been directed here as a portfolio link, click below to view my resume.
           </i>
         </p>
         <div className={styles.drops}>

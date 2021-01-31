@@ -23,6 +23,7 @@ function Deploy () {
           <p>Follow these steps to add RoboPenny to any server.</p>
           <button className='inviteBot'><a href='https://discord.com/api/oauth2/authorize?client_id=754507160083365898&permissions=2110254327&scope=bot'>Invite RoboPenny!</a></button>
           </div>
+          <a href='https://discord.gg/dHbsSvKfbP' className="discord" ><i className="fab fa-discord"></i></a>
       </div>
   )
 }

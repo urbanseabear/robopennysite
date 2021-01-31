@@ -11,11 +11,12 @@ const Modal = ({isShowing, hide}) => isShowing ? ReactDOM.createPortal(
             <span aria-hidden="true">&times;</span>
           </button>
           </div>
+          <div className="backdrop">
           <img className="resume"
-          src='resume.jpg'
+          src='resume.png'
           alt="rsume"
-         
         />
+        </div>
         </div>
         </div>
     </div>
