@@ -12,6 +12,7 @@ export default function Home() {
       <Head>
         <title>Robo Penny</title>
         <link rel="icon" href="/favicon.ico" />
+        
         <div id='first' className='nav'>
         <a className='navOption' href='/'>Home</a>
         
@@ -20,6 +21,7 @@ export default function Home() {
         <a className='navOption' href='/docs'>Docs</a>
         
         <a className='navOption' href='/deploy'> Deploy</a>
+        <a href='https://discord.gg/dHbsSvKfbP' className="badgob" ><i className="fab fa-discord"></i><span className="bgtext">Help & Support</span></a>
         </div>
       </Head>
       
@@ -57,7 +59,7 @@ export default function Home() {
             <h3>About &rarr;</h3>
             <p>Learn about the developer behind RoboPenny!</p>
           </a>
-          
+
         </div>
       </main>
 

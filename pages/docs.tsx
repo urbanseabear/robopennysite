@@ -1,5 +1,6 @@
 import Head from 'next/head';
 
+
 function Docs () {
     return (
         <div>
@@ -16,6 +17,7 @@ function Docs () {
         <a className='navOption' href='/docs'>Docs</a>
         
         <a className='navOption' href='/deploy'> Deploy</a>
+        <a href='https://discord.gg/dHbsSvKfbP' className="badgob" ><i className="fab fa-discord"></i><span className="bgtext">Help & Support</span></a>
         </div>
       </Head>
             <h1>Documentation</h1>

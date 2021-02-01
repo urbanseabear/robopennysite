@@ -7,9 +7,8 @@
   src:url('../public/Noto_Sans_JP/NotoSansJP-Regular.otf') format('opentype');
 }
 
-$fa-font-path: "../public/webfonts";
 
-@import "./brands.scss";
+
 
 $mainColor: rgb(161, 82, 155);
 
@@ -43,6 +42,8 @@ body {
 .nav {
   margin-top: 0.5rem;
   margin-left: 0.5rem;
+  display: flex;
+  
   font-family: "Noto Sans", sans-serif;
   padding-bottom: 1rem;
   border-bottom: 2px solid;
@@ -52,6 +53,30 @@ body {
     transition: border-bottom linear 0.3s;
     border-bottom: 2px solid transparent;
     padding: .5rem 1rem 1rem 1rem;
+  }
+  .social {
+    margin-left: auto;
+    font-size: 2rem;
+    .badgob {
+      padding-right: 1rem;
+      .bgtext {
+      visibility: hidden;
+      width: 4rem;
+      bottom: 100%;
+      left: 50%;
+      margin-left: 2rem;
+      background-color: transparent;
+      color: whitesmoke;
+      text-align: center;
+      border-radius: 4px;
+      position: absolute;
+      z-index: 1;
+      }
+      .badgob:hover .bgtext {
+        visibility: visible;
+      }
+    }
+
   }
   .navOption:hover {
     border-color: rgb(182, 154, 179);
