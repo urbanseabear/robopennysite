@@ -20,13 +20,14 @@ function Deploy () {
         
         <a className='navOption' href='/deploy'> Deploy</a>
         <div className="social">
-        <a href='https://discord.gg/dHbsSvKfbP' className="badgob" ><i className="fab fa-discord"></i><span className="bgtext">Help & Support</span></a>
+        <a href='https://discord.gg/dHbsSvKfbP' target="_blank" className="badgob" ><i className="fab fa-discord"></i><span className="bgtext">Help & Support</span></a>
         </div>
         </div>
       </Head>
           <h2>Interestred in adding RoboPenny to your server?</h2>
           <p>Follow these invite below to add it!</p>
-          <button className='inviteBot'><a href='https://discord.com/api/oauth2/authorize?client_id=754507160083365898&permissions=2110254327&scope=bot'>Invite RoboPenny!</a></button>
+          <button className='inviteBot'><a href='https://discord.com/api/oauth2/authorize?client_id=754507160083365898&permissions=2110254327&scope=bot' target='botlink'>Invite RoboPenny!</a></button>
+          <iframe src ="discord.htm" title="discordbotadd" name='botlink'></iframe>
           </div>
           
       </div>

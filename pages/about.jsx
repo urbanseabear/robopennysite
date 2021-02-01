@@ -3,12 +3,15 @@ import useModal from "./useModal";
 import Modal from "./Modal";
 import styles from "../styles/About.module.scss";
 import { useState } from "react";
+import '@fortawesome/fontawesome-free/js/all.js';
 
 function About() {
 
+  
   const {isShowing, toggle} = useModal();
   const [showResume, setShowResume] = useState("hidden");
   const [showPics, setShowPics] = useState("hidden");
+  
   return (
     <div>
       <div id="stars"></div>
@@ -25,7 +28,9 @@ function About() {
         <a className='navOption' href='/docs'>Docs</a>
         
         <a className='navOption' href='/deploy'> Deploy</a>
-        <a href='https://discord.gg/dHbsSvKfbP' className="badgob" ><i className="fab fa-discord"></i><span className="bgtext">Help & Support</span></a>
+        <div className="social">
+        <a href='https://discord.gg/dHbsSvKfbP' target="_blank" className="badgob" ><i className="fab fa-discord"></i><span className="bgtext">Help & Support</span></a>
+        </div>
         </div>
       </Head>
       

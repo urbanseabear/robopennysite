@@ -1,5 +1,5 @@
 import Head from 'next/head';
-
+import '@fortawesome/fontawesome-free/js/all.js';
 
 function Docs () {
     return (
@@ -17,7 +17,9 @@ function Docs () {
         <a className='navOption' href='/docs'>Docs</a>
         
         <a className='navOption' href='/deploy'> Deploy</a>
-        <a href='https://discord.gg/dHbsSvKfbP' className="badgob" ><i className="fab fa-discord"></i><span className="bgtext">Help & Support</span></a>
+        <div className="social">
+        <a href='https://discord.gg/dHbsSvKfbP' target="_blank" className="badgob" ><i className="fab fa-discord"></i><span className="bgtext">Help & Support</span></a>
+        </div>
         </div>
       </Head>
             <h1>Documentation</h1>

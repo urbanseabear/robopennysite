@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.scss';
+import '@fortawesome/fontawesome-free/js/all.js';
 
 export default function Home() {
 
@@ -21,7 +22,9 @@ export default function Home() {
         <a className='navOption' href='/docs'>Docs</a>
         
         <a className='navOption' href='/deploy'> Deploy</a>
-        <a href='https://discord.gg/dHbsSvKfbP' className="badgob" ><i className="fab fa-discord"></i><span className="bgtext">Help & Support</span></a>
+        <div className="social">
+        <a href='https://discord.gg/dHbsSvKfbP' target="_blank" className="badgob" ><i className="fab fa-discord"></i><span className="bgtext">Help & Support</span></a>
+        </div>
         </div>
       </Head>
       
@@ -48,7 +51,7 @@ export default function Home() {
           >
             <h3>Deploy &rarr;</h3>
             <p>
-              Add RoboPenny to your discord server.
+              Enable RoboPenny on your own discord server!
             </p>
           </a>
 
@@ -57,7 +60,7 @@ export default function Home() {
             className={styles.card}
           >
             <h3>About &rarr;</h3>
-            <p>Learn about the developer behind RoboPenny!</p>
+            <p>Learn about the developer behind RoboPenny.</p>
           </a>
 
         </div>
