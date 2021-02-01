@@ -1,6 +1,6 @@
 import Head from "next/head";
-import useModal from "./useModal";
-import Modal from "./Modal";
+import useModal from "../helpers/_useModal";
+import Modal from "../helpers/_Modal";
 import styles from "../styles/About.module.scss";
 import { useState } from "react";
 import '@fortawesome/fontawesome-free/js/all.js';
