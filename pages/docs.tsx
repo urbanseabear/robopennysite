@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import '@fortawesome/fontawesome-free/js/all.js';
+import styles from "../styles/Docs.module.scss";
 
 function Docs () {
     return (
@@ -22,7 +23,21 @@ function Docs () {
         </div>
         </div>
       </Head>
+      <div className={styles.docContain}>
+          <div className={styles.docHead}>
             <h1>Documentation</h1>
+            </div>
+            <div className={styles.sidebar}>Commands
+                <ul>
+                    <li>Ping</li>
+                    <li>Market</li>
+                    <li>Show</li>
+                    <li>Unspoiled</li>
+                    <li>Ephemeral</li>
+                    <li>g</li>
+                </ul>
+            </div>
+            </div>
         </div>
     )
 }

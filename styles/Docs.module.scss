@@ -1,0 +1,19 @@
+.docContain {
+    display: grid;
+    grid-template-columns: .3fr 2fr;
+    grid-template-rows: .1fr 2fr;
+}
+.docHead {
+    grid-column-end: span 2;
+    padding-bottom: 2%;
+    border-bottom: 2px solid;
+    border-color: rgb(39, 43, 66);
+}
+.sidebar {
+    padding-top: 5%;
+    grid-column: 1;
+    border-right: 2px solid;
+    border-color: rgb(39, 43, 66);
+    font-family: "Noto";
+    height: 100vh;
+}
