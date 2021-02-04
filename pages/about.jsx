@@ -41,8 +41,10 @@ function About() {
             the Goblin server on Crystal in FFXIV. I made this bot in order to
             work on my dev skills and give our FC discord server some unique
             abilities. If you've been directed here as a portfolio link, click below to view my resume.
+            
           </i>
         </p>
+        <p className={styles.about}><i>This site is currently under construction, so please excuse the bare bones sections!</i></p>
         <div className={styles.drops}>
         <h3
           className={styles.char}

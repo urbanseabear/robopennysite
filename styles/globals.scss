@@ -39,6 +39,21 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+.inviteBot {
+  font-family: 'Noto';
+  font-size: 2rem;
+  background: transparent;
+  color: $mainColor;
+  max-width: 400px;
+  border-color: $mainColor;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgb(39, 43, 66);
+  transition: box-shadow .5s ease-in-out;
+}
+.inviteBot:hover {
+  box-shadow:3px 3px 5px $mainColor;
+}
+
 .nav {
   margin-top: 0.5rem;
   margin-left: 0.5rem;
@@ -190,14 +205,7 @@ a {
   to {transform: translateY(-2000px);}
 }
 
-.inviteBot {
-  font-family: 'Noto';
-  font-size: 2rem;
-  background: transparent;
-  color: $mainColor;
-  border-color: $mainColor;
-  box-shadow: 3px 3px 3px $mainColor;
-}
+
 * {
   box-sizing: border-box;
 }

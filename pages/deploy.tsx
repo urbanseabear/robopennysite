@@ -25,12 +25,14 @@ function Deploy () {
         </div>
         </div>
       </Head>
-          <h2>Interested in adding RoboPenny to your server?</h2>
-          <p>Follow these invite below to add it!</p>
+          <h2 style={{marginLeft: "2vw"}}>Interested in adding RoboPenny to your server?</h2>
+          <p style={{marginLeft: "5vw", fontSize: "1.2rem"}}>Follow the invite below to add it!</p>
           <div className={styles.eContain}>
-          <button className='inviteBot'><a href='https://discord.com/api/oauth2/authorize?client_id=754507160083365898&permissions=2110254327&scope=bot' target='botlink'>Invite RoboPenny!</a></button>
-          <iframe className={styles.dEmbed} src="https://discordapp.com/widget?id=728734535956693013&theme=dark" width="350" height="500" allowTransparency={true} frameBorder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+          <button className='inviteBot'><a href='https://discord.com/api/oauth2/authorize?client_id=754507160083365898&permissions=2110254327&scope=bot'>Invite RoboPenny!</a></button>
+          <p style={{fontSize: "1.5rem"}}>or</p>
+          <button className='inviteBot'><a href='https://discord.gg/dHbsSvKfbP' >Join our discord server to see RoboPenny in action!</a></button>
           </div>
+          <iframe className={styles.dEmbed} src="https://discordapp.com/widget?id=728734535956693013&theme=dark" width="350" height="500" allowTransparency={true} frameBorder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
           </div>
           
       </div>
