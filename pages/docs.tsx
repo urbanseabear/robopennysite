@@ -1,8 +1,22 @@
 import Head from 'next/head';
 import '@fortawesome/fontawesome-free/js/all.js';
 import styles from "../styles/Docs.module.scss";
+import fs from 'fs';
+import { useState } from 'react';
+import remark from 'remark';
+import html from 'remark-html';
 
-function Docs () {
+
+function Docs ({ commands }) {
+    const [currentCommand, setCurrent] = useState('meow');
+
+    const handleClick = (e) => {
+        remark().use(html).process(commands[e.target.value].content)
+        .then((result) => {
+            setCurrent(result.toString());
+        })
+        .catch(err => console.error(err));
+    }
     return (
         <div>
             <div id='stars'></div>
@@ -29,6 +43,9 @@ function Docs () {
             </div>
             <div className={styles.sidebar}>Commands
                 <ul>
+                    {commands.map((com, i) => {
+                        return (<li value={i} onClick={(e) => handleClick(e)}>{com.name}</li>);
+                    })}
                     <li>Ping</li>
                     <li>Market</li>
                     <li>Show</li>
@@ -37,9 +54,25 @@ function Docs () {
                     <li>g</li>
                 </ul>
             </div>
+            <div className={styles.documentation}  dangerouslySetInnerHTML={{__html: currentCommand}}>
+            </div>
             </div>
         </div>
     )
 }
 
+export async function getStaticProps() {
+    const allCommands = fs.readdirSync('/home/calvin/vscode/robopennysite/pages/docs');
+    let commands = []; 
+    for (const file of allCommands) {
+       let command = { name: file.slice(0, file.length - 3), content: fs.readFileSync(`/home/calvin/vscode/robopennysite/pages/docs/${file}`).toString() };
+       console.log(command);
+       commands.push(command);
+    }
+    return {
+        props: {
+            commands
+        }
+    }
+}
 export default Docs;
