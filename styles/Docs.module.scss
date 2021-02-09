@@ -18,6 +18,10 @@
     height: 100vh;
 }
 
+.coms:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
 .documentation {
     font-family: "Noto";
     margin-left: 1rem;

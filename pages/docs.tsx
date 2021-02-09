@@ -2,15 +2,17 @@ import Head from 'next/head';
 import '@fortawesome/fontawesome-free/js/all.js';
 import styles from "../styles/Docs.module.scss";
 import fs from 'fs';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import remark from 'remark';
 import html from 'remark-html';
+import { motion } from 'framer-motion';
 
 
 function Docs ({ commands }) {
-    const [currentCommand, setCurrent] = useState('meow');
+    const [currentCommand, setCurrent] = useState('meow. click on a command in the sidebar to see more info.');
 
     const handleClick = (e) => {
+        
         remark().use(html).process(commands[e.target.value].content)
         .then((result) => {
             setCurrent(result.toString());
@@ -44,18 +46,26 @@ function Docs ({ commands }) {
             <div className={styles.sidebar}>Commands
                 <ul>
                     {commands.map((com, i) => {
-                        return (<li value={i} onClick={(e) => handleClick(e)}>{com.name}</li>);
+                        return (<li className={styles.coms} value={i} onClick={(e) => handleClick(e)}>{com.name}</li>);
                     })}
-                    <li>Ping</li>
-                    <li>Market</li>
-                    <li>Show</li>
-                    <li>Unspoiled</li>
-                    <li>Ephemeral</li>
-                    <li>g</li>
                 </ul>
             </div>
-            <div className={styles.documentation}  dangerouslySetInnerHTML={{__html: currentCommand}}>
+            <motion.div initial="hidden" animate="visible" variants={{
+            hidden: {
+              scale: .8,
+              opacity: 0
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delay: .4
+              }
+            },
+          }}>
+            <div id='method-info' className={styles.documentation}  dangerouslySetInnerHTML={{__html: currentCommand}}>
             </div>
+            </motion.div>
             </div>
         </div>
     )
@@ -66,7 +76,6 @@ export async function getStaticProps() {
     let commands = []; 
     for (const file of allCommands) {
        let command = { name: file.slice(0, file.length - 3), content: fs.readFileSync(`/home/calvin/vscode/robopennysite/pages/docs/${file}`).toString() };
-       console.log(command);
        commands.push(command);
     }
     return {
