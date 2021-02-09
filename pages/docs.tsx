@@ -72,10 +72,10 @@ function Docs ({ commands }) {
 }
 
 export async function getStaticProps() {
-    const allCommands = fs.readdirSync('/home/calvin/vscode/robopennysite/pages/docs');
+    const allCommands = fs.readdirSync('/home/calvin/vscode/robopennysite/docs');
     let commands = []; 
     for (const file of allCommands) {
-       let command = { name: file.slice(0, file.length - 3), content: fs.readFileSync(`/home/calvin/vscode/robopennysite/pages/docs/${file}`).toString() };
+       let command = { name: file.slice(0, file.length - 3), content: fs.readFileSync(`/home/calvin/vscode/robopennysite/docs/${file}`).toString() };
        commands.push(command);
     }
     return {
