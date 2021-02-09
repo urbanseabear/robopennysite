@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import remark from 'remark';
 import html from 'remark-html';
 import { motion } from 'framer-motion';
+import path from 'path';
 
 
 function Docs ({ commands }) {
@@ -72,10 +73,12 @@ function Docs ({ commands }) {
 }
 
 export async function getStaticProps() {
-    const allCommands = fs.readdirSync('/home/calvin/vscode/robopennysite/docs');
+    const pathDir = path.join(process.cwd(), 'docs');
+    const allCommands = fs.readdirSync(pathDir);
     let commands = []; 
     for (const file of allCommands) {
-       let command = { name: file.slice(0, file.length - 3), content: fs.readFileSync(`/home/calvin/vscode/robopennysite/docs/${file}`).toString() };
+       let filePath = path.join(pathDir, file);
+       let command = { name: file.slice(0, file.length - 3), content: fs.readFileSync(filePath).toString() };
        commands.push(command);
     }
     return {
