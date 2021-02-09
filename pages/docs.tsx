@@ -73,7 +73,7 @@ function Docs ({ commands }) {
 }
 
 export async function getStaticProps() {
-    const pathDir = path.join(process.cwd(), 'docs');
+    const pathDir = path.join(process.cwd(), '/pages/mds');
     const allCommands = fs.readdirSync(pathDir);
     let commands = []; 
     for (const file of allCommands) {
