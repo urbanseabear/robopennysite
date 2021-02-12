@@ -21,7 +21,7 @@ function Deploy () {
         
         <a className='navOption' href='/deploy'> Deploy</a>
         <div className="social">
-        <a href='https://discord.gg/dHbsSvKfbP' target="_blank" className="badgob" ><i className="fab fa-discord"></i><span className="bgtext">Help & Support</span></a>
+        <a href='https://discord.gg/dHbsSvKfbP' target="_blank" className="badgob" > <span className="bgtext">Help & Support</span><i className="fab fa-discord"></i> </a>
         <a href='https://github.com/urbanseabear/robopenny' target="_blank" className="badgob" ><i className="fab fa-github-square"></i></a>
         <a href='https://twitter.com/RoboPennyFFXIV' target="_blank" className="badgob" ><i className="fab fa-twitter"></i></a>
         </div>

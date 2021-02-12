@@ -50,6 +50,16 @@ function About() {
         <div className={styles.drops}>
         <h3
           className={styles.char}
+          onClick={toggle}
+        >
+          RESUME  
+          {showResume === "hidden"
+              ? <span style={{ marginLeft: "8px", fontSize: "1rem" }}>&#9660;</span>
+              : <span style={{ marginLeft: "8px",fontSize: "1rem" }}>&#9650;</span>
+          }
+        </h3>
+        <h3
+          className={styles.char}
           onClick={() => {
             if (showPics === "hidden") {
               setShowPics("visible");
@@ -64,22 +74,6 @@ function About() {
               : <span style={{ marginLeft: "8px",fontSize: "1rem" }}>&#9650;</span>
           }
         </h3>
-        
-        <h3
-          className={styles.char}
-          onClick={toggle}
-        >
-          RESUME  
-          {showResume === "hidden"
-              ? <span style={{ marginLeft: "8px", fontSize: "1rem" }}>&#9660;</span>
-              : <span style={{ marginLeft: "8px",fontSize: "1rem" }}>&#9650;</span>
-          }
-        </h3>
-        <Modal
-        isShowing={isShowing}
-        hide={toggle}
-        />
-        </div>
         <img
           src="https://img2.finalfantasyxiv.com/f/9c0b4a932340579824dd05b0db0dc0d5_8e81e2940511f7152ba4462fe53e35b8fl0_640x873.jpg?1611084345&_ga=2.91680218.1124699889.1610844458-424753855.1557808539"
           alt="Penny Ura"
@@ -87,6 +81,14 @@ function About() {
           height={300}
           style={{ visibility: showPics }}
         />
+        
+        
+        <Modal
+        isShowing={isShowing}
+        hide={toggle}
+        />
+        </div>
+        
         
         
       </div>

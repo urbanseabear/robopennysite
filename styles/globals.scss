@@ -72,8 +72,9 @@ body {
     font-size: 2rem;
     .badgob {
       padding-right: 1rem;
+    }
       .bgtext {
-      visibility: hidden;
+      visibility: visible;
       width: 4rem;
       bottom: 100%;
       left: 50%;
@@ -94,11 +95,10 @@ body {
       border-width: 5px;
       border-style: solid;
       border-color: transparent transparent transparent black;
-}
-      .badgob:hover .bgtext {
+      }
+      .badgob:hover .bgtext:hover {
         visibility: visible;
       }
-    }
 
   }
   .navOption:hover {
