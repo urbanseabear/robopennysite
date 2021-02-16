@@ -71,7 +71,9 @@ body {
     margin-left: auto;
     font-size: 2rem;
     .badgob {
+      font-size: 2rem;
       padding-right: 1rem;
+      transition: font-size linear;
     }
       .bgtext {
       visibility: visible;

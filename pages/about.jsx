@@ -13,10 +13,10 @@ function About() {
   const [showPics, setShowPics] = useState("hidden");
   
   return (
-    <div>
+    <div >
       <div id="stars"></div>
       <div id="stars2"></div>
-      <div className={styles.container}>
+      
       <Head>
         <title>Robo Penny</title>
         <link rel="icon" href="/favicon.ico" />
@@ -35,7 +35,7 @@ function About() {
         </div>
         </div>
       </Head>
-      
+      <div className={styles.container}>
         <h2 className={styles.title}>About the developer</h2>
         <p className={styles.about}>
           <i>
@@ -46,6 +46,7 @@ function About() {
             
           </i>
         </p>
+        <p className={styles.about}><i>If you have any questions for me about the bot or other things, feel free to shoot me an <a className={styles.email} href='mailto:calvin.rudy@gmail.com' target='_blank' >email</a> or direct message me on discord: urbanseabear#6670</i></p>
         <p className={styles.about}><i>This site is currently under construction, so please excuse the bare bones sections!</i></p>
         <div className={styles.drops}>
         <h3
@@ -81,18 +82,13 @@ function About() {
           height={300}
           style={{ visibility: showPics }}
         />
-        
-        
+        <p>meow</p>
         <Modal
         isShowing={isShowing}
         hide={toggle}
         />
         </div>
-        
-        
-        
       </div>
-      <div></div>
     </div>
   );
 }
